@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfApplication1.MemberWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Member Area" Height="360" Width="618" FontFamily="Calibri">
+    <Grid>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="329" VerticalAlignment="Top" Width="610" Background="WhiteSmoke">
+            <TabItem Header="General">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FFE5E5E5" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="WhiteSmoke">
+                    <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="188" Margin="248,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="346" x:FieldModifier="public"/>
+                    <TextBox x:Name="textBox_saveFolder" HorizontalAlignment="Left" Height="23" Margin="423,53,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <Button Content="..." HorizontalAlignment="Left" Margin="548,53,0,0" VerticalAlignment="Top" Width="25" RenderTransformOrigin="0.463,0.649" Height="23" Click="Button_Click"/>
+                    <Label Content="Local copy Folder:" HorizontalAlignment="Left" Margin="327,53,0,0" VerticalAlignment="Top" Width="96"/>
+                    <Label x:Name="label_username" Content="Label" HorizontalAlignment="Left" Margin="71,37,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="textBox_wm" HorizontalAlignment="Left" Height="23" Margin="30,239,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <Button x:Name="button_handle" Content="Button" HorizontalAlignment="Left" Margin="30,205,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="HotKeys">
+                <Grid x:Name="grid_hotkeys" Background="WhiteSmoke" KeyUp="grid_hotkeys_KeyUp">
+                    <Button x:Name="button_hk1" Content="Button" HorizontalAlignment="Left" Height="26" Margin="376,43,0,0" VerticalAlignment="Top" Width="105" Click="button_hk1_Click"/>
+                    <Button x:Name="button_hk3" Content="Button" HorizontalAlignment="Left" Height="26" Margin="376,105,0,0" VerticalAlignment="Top" Width="105" Click="button_hk3_Click"/>
+                    <Button x:Name="button_hk4" Content="Button" HorizontalAlignment="Left" Height="26" Margin="376,136,0,0" VerticalAlignment="Top" Width="105" Click="button_hk4_Click"/>
+                    <Button x:Name="button_hk5" Content="Button" HorizontalAlignment="Left" Height="26" Margin="376,167,0,0" VerticalAlignment="Top" Width="105" Click="button_hk5_Click"/>
+                    <Button x:Name="button_hk6" Content="Button" HorizontalAlignment="Left" Height="26" Margin="376,198,0,0" VerticalAlignment="Top" Width="105" Click="button_hk6_Click"/>
+                    <Button x:Name="button_hk2" Content="Button" HorizontalAlignment="Left" Height="26" Margin="376,74,0,0" VerticalAlignment="Top" Width="105" Click="button_hk2_Click"/>
+                    <Label x:Name="label_hk1" Content="Capture Entire Screen:" HorizontalAlignment="Left" Margin="105,44,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_hk2" Content="Capture Current Window:" HorizontalAlignment="Left" Margin="105,74,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_hk3" Content="Capture Selection:" HorizontalAlignment="Left" Margin="105,105,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_hk4" Content="Upload Clipboard:" HorizontalAlignment="Left" Margin="105,136,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_hk5" Content="Upload File:" HorizontalAlignment="Left" Margin="105,167,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_hk6" Content="Toggle:" HorizontalAlignment="Left" Margin="105,198,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label_keyassign" Content="PRESS A KEY OR A KEY COMBINATION TO ASSIGN THE NEW HOTKEY" HorizontalAlignment="Left" Margin="95,247,0,0" VerticalAlignment="Top" Foreground="#FFDA5446" FontSize="14" FontWeight="Bold" Width="404" Visibility="Hidden"/>
+                    
+                </Grid>
+            </TabItem>
+            <TabItem Header="Account"/>
+            <TabItem Header="Settings"/>
+        </TabControl>
+
+    </Grid>
+</Window>

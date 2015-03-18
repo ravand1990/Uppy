@@ -1,0 +1,12 @@
+﻿<Window 
+    x:Class="WpfApplication1.DrawForm"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DrawForm" Height="300" Width="300"
+    WindowStyle="None"
+    AllowsTransparency="true"
+    Background="#01FFFFFF"
+    >
+
+    <Canvas IsHitTestVisible="true" Background="Transparent" MouseDown="Grid_MouseDown" MouseUp="Grid_MouseUp" MouseMove="Grid_MouseMove"/>
+</Window>
