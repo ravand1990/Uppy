@@ -13,7 +13,7 @@ using MouseEventArgs = System.Windows.Input.MouseEventArgs;
 using Point = System.Windows.Point;
 using Rectangle = System.Windows.Shapes.Rectangle;
 
-namespace WpfApplication1
+namespace Uppy
 {
     /// <summary>
     ///     Interaction logic for DrawForm.xaml

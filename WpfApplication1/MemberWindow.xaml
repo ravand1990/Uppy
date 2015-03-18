@@ -1,4 +1,4 @@
-﻿<Window x:Class="WpfApplication1.MemberWindow"
+﻿<Window x:Class="Uppy.MemberWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Member Area" Height="360" Width="618" FontFamily="Calibri">

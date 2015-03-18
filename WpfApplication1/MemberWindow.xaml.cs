@@ -12,12 +12,12 @@ using System.Windows.Interop;
 using FileUpload;
 using Hotkeys;
 using Hotkeys.Constants;
-using WpfApplication1.Properties;
+using Uppy.Properties;
 using Button = System.Windows.Controls.Button;
 using KeyEventArgs = System.Windows.Input.KeyEventArgs;
 using MessageBox = System.Windows.MessageBox;
 
-namespace WpfApplication1
+namespace Uppy
 {
     /// <summary>
     /// Interaction logic for Window1.xaml

@@ -10,7 +10,7 @@ using DataFormats = System.Windows.DataFormats;
 using IDataObject = System.Windows.IDataObject;
 using MessageBox = System.Windows.MessageBox;
 
-namespace WpfApplication1
+namespace Uppy
 {
     internal class ClipboardHandler
     {
